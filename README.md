@@ -129,4 +129,3 @@ SemanticShift. DOI: https://doi.org/10.5281/zenodo.19447063
 Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)
 Attribution required. https://creativecommons.org/licenses/by/4.0/
 
-> *"The Pythagorean theorem is not wrong. It is incomplete. This paper completes it."* — CJ
