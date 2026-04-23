@@ -116,6 +116,10 @@ One square root at the end.
 
 An interactive tool is included in this repository. Enter any two of the four variables and the engine derives the remaining two, computes Delta, classifies the triangle, and renders the geometry in real time. The engine runs in any browser.
 
+👉 [https://semanticdrift.github.io/Geometric-Matrix/](https://semanticdrift.github.io/Geometric-Matrix/)
+
+---
+
 ### Dependencies
 
 | Framework | DOI |
@@ -124,10 +128,6 @@ An interactive tool is included in this repository. Enter any two of the four va
 | The Origami Principle | [https://doi.org/10.5281/zenodo.18293884](https://doi.org/10.5281/zenodo.18293884) |
 
 Full publication list: [https://www.semanticshift.net](https://www.semanticshift.net)
-
-### Live Interactive Engine
-
-👉 [https://semanticdrift.github.io/Geometric-Matrix/](https://semanticdrift.github.io/Geometric-Matrix/)
 
 ---
 
