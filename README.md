@@ -103,7 +103,7 @@ The engine runs in any browser. No dependencies.
 
 ### Live Interactive Engine
 
-👉 [https://semanticdrift.github.io/Symmetric-Span-Protocol/](https://semanticdrift.github.io/Symmetric-Span-Protocol/)
+👉 [https://semanticdrift.github.io/Geometric-Matrix/](https://semanticdrift.github.io/Geometric-Matrix/)
 
 ---
 
