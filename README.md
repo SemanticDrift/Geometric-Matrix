@@ -52,7 +52,7 @@ These are not hypotheses. They are the definitions of midpoint and distance. Giv
 | File | Description |
 |------|-------------|
 | `README.md` | This file |
-| `Geometric Matrix.pdf` | Full paper with proofs and scaling law |
+| `Geometric Matrix.pdf` | Full paper |
 
 ---
 
