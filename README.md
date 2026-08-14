@@ -47,12 +47,25 @@ These are not hypotheses. They are the definitions of midpoint and distance. Giv
 
 ---
 
+## The Logic Engine
+
+An interactive tool is included in this repository. Enter any two of the four variables and the engine derives the remaining two, computes Δ, classifies the triangle, and renders the geometry in real time.
+
+The engine runs in any browser. No dependencies.
+
+### Live Interactive Engine
+
+👉 [https://semanticdrift.github.io/Symmetric-Span-Protocol/](https://semanticdrift.github.io/Symmetric-Span-Protocol/)
+
+---
+
 ## Repository Contents
 
 | File | Description |
 |------|-------------|
 | `README.md` | This file |
 | `Geometric Matrix.pdf` | Full paper |
+| `geometric_matrix_engine.html` | Interactive Logic Engine |
 
 ---
 
