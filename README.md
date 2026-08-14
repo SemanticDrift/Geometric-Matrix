@@ -1,133 +1,49 @@
 # The Geometric Matrix
-## Completing the Pythagorean Theorem
+**Completing the Pythagorean Theorem**
+*Series: Mathematical Foundations for Universal Systems*
 
-**Series:** Mathematical Foundations for Universal Systems
-**Author:** Carolina Johnson (CJ)
-**Date:** April 2026
-**License:** CC BY 4.0, Attribution required
-**DOI:** [https://doi.org/10.5281/zenodo.19490969](https://doi.org/10.5281/zenodo.19490969)
-**ORCID:** [https://orcid.org/0009-0002-8819-3347](https://orcid.org/0009-0002-8819-3347)
-
----
-
-## What This Does
-
-Replaces three separate mathematical frameworks (Trigonometry, Heron's Formula, and the Pythagorean Theorem) with a single coordinate matrix. One set of arithmetic derives any triangle, its circumscribed circle, and its bounding square from a boundary span, with no forced right-angle dependencies, no post-hoc correction, and no floating-point drift introduced at the source.
+**Author:** Carolina Johnson (CJ)  
+**Date:** April 2026  
+**DOI:** [10.5281/zenodo.19447062](https://doi.org/10.5281/zenodo.19447062)  
+**ORCID:** [0009-0002-8819-3347](https://orcid.org/0009-0002-8819-3347)
 
 ---
 
-## The Problem It Solves
+## Overview
 
-The Pythagorean theorem a² + b² = c² is correct but incomplete. It tells you the relationship between three sides of a right triangle, but it does not tell you where the triangle sits on a circle, how it balances around its center, or why a rope of fixed length pinned at three points must form a specific triangle.
+The Pythagorean theorem is correct but incomplete. It describes the relationship between the three sides of a right triangle, but it does not explain where the triangle sits on a circle, how it balances around its center, or why a rope of fixed length pinned at three points must form a specific triangle.
 
-Ancient builders used a 12-knot rope to produce a 3-4-5 right triangle. The standard theorem confirms it works, but it does not explain why it must work.
+The Geometric Matrix fills that gap. It introduces four variables — the left anchor `a`, centroid `b`, span `c`, and right boundary `d` — that satisfy a closed symmetry matrix. From any two variables, the remaining two are forced by arithmetic. The system generates triangles, their circumcircles, and their bounding squares from a single boundary span, with no trigonometry required and no floating-point drift introduced at the source.
 
-The Geometric Matrix fills that gap.
+Ancient builders used a 12-knot rope to produce a 3-4-5 right triangle. The standard theorem confirms it works. The Geometric Matrix explains why it must work.
+
+---
+
+## Key Contributions
+
+- **Unified Framework:** Replaces three separate mathematical frameworks (trigonometry, Heron's formula, and the Pythagorean theorem) with a single coordinate matrix.
+
+- **Delta Classification:** The invariant `Δ = b² + c² - d²` classifies all triangles as acute, right, or obtuse without trigonometry.
+
+- **3-4-5 Family:** The right-triangle equilibrium condition `Δ = 0` forces `d = 5a`, generating the 3-4-5 family as an arithmetic necessity of the boundary `[1, 5]`.
+
+- **Rational Circumcenter:** The circumcenter is derived through rational partitioning with only one square root at the end — no trigonometric functions, no Heron's formula.
+
+- **Full Cycle:** From the same matrix, the triangle, its circumcircle, and its bounding square are derived as states of one system.
 
 ---
 
 ## The Matrix
 
-For any anchor boundary [a, d] with a < d, define:
+For any anchor boundary `[a, d]` with `a < d`:
 
-```
-a = b - (c / 2)
+a = b - c/2
 b = (a + d) / 2
 c = d - a
-d = b + (c / 2)
-```
+d = b + c/2
 
-These are not hypotheses. They are the definitions of midpoint and distance. Given a and d, the values b and c are forced.
 
-Any one variable can be derived from any two others. The system is closed by arithmetic. The triangle defined by b, c, and d is not free-form. It exists within the boundary [a, d], and its proportions are a necessary consequence of the system rather than an independent selection.
-
----
-
-## The Delta Constant
-
-For any triangle produced by the Geometric Matrix:
-
-```
-Delta = b² + c² - d²
-      = (5a - d)(a - d) / 4
-```
-
-Since a < d, the sign of Delta is determined by (5a - d):
-
-| Condition | Delta | Triangle            |
-|-----------|-------|---------------------|
-| d = 5a    | 0     | Right (equilibrium) |
-| d < 5a    | < 0   | Obtuse              |
-| d > 5a    | > 0   | Acute               |
-
-The standard Pythagorean theorem addresses only Delta = 0. The Geometric Matrix extends it to all triangles.
-
----
-
-## The Pythagorean Subclass
-
-When d = 5a, let a = n:
-
-```
-a = n,  b = 3n,  c = 4n,  d = 5n
-```
-
-This is the 3-4-5 family. It satisfies b² + c² = d² exactly and scales to any magnitude. The 12-knot rope corresponds to the boundary [1, 5], producing b = 3, c = 4, d = 5 as arithmetic necessity, not geometric intuition.
-
----
-
-## What the Standard Theorem Is Missing
-
-Two things:
-
-**Missing context:** The theorem does not specify where the triangle sits within a circle. It ignores the anchor points that define the base span and centroid.
-
-**No balance point:** The centroid b is not used as a primary variable. Without it, the triangle has no reference to the linear field from which it was derived.
-
-The Pythagorean theorem is not wrong. It is incomplete. This paper completes it.
-
----
-
-## The Full Cycle
-
-From the same matrix, the triangle, its circumscribed circle, and its bounding square are all derived as states of one system:
-
-```
-Matrix  =>  Triangle  =>  Circumcircle  =>  Bounding Square
-```
-
-The circumcenter is located via rational partitioning, with no trigonometry and no Heron's formula required:
-
-```
-x  = (b² + c² - d²) / (2c)
-y  = sqrt(b² - x²)
-Xc = c / 2
-Yc = y/2 - x(c - x) / (2y)
-R  = sqrt((c/2)² + Yc²)
-C  = (22/7) * 2R
-D  = 2R
-```
-
-One square root at the end.
-
----
-
-## The Logic Engine
-
-An interactive tool is included in this repository. Enter any two of the four variables and the engine derives the remaining two, computes Delta, classifies the triangle, and renders the geometry in real time. The engine runs in any browser.
-
-👉 [https://semanticdrift.github.io/Geometric-Matrix/](https://semanticdrift.github.io/Geometric-Matrix/)
-
----
-
-### Dependencies
-
-| Framework | DOI |
-|-----------|-----|
-| Law of Admissibility (R = 4) | [https://doi.org/10.5281/zenodo.18993233](https://doi.org/10.5281/zenodo.18993233) |
-| The Origami Principle | [https://doi.org/10.5281/zenodo.18293884](https://doi.org/10.5281/zenodo.18293884) |
-
-Full publication list: [https://www.semanticshift.net](https://www.semanticshift.net)
+These are not hypotheses. They are the definitions of midpoint and distance. Given `a` and `d`, the values `b` and `c` are forced. Any one variable can be derived from any two others. The system is closed by arithmetic.
 
 ---
 
@@ -137,7 +53,16 @@ Full publication list: [https://www.semanticshift.net](https://www.semanticshift
 |------|-------------|
 | `README.md` | This file |
 | `Geometric Matrix.pdf` | Full paper with proofs and scaling law |
-| `geometric_matrix_engine.html` | Interactive Logic Engine |
+
+---
+
+## Dependencies
+
+| Framework | DOI |
+|-----------|-----|
+| The Origami Principle | [10.5281/zenodo.18293883](https://doi.org/10.5281/zenodo.18293883) |
+
+Full publication list: [https://www.SemanticDrift.net](https://www.semanticdrift.net)
 
 ---
 
