@@ -12,8 +12,7 @@
 
 ## Overview
 
-The Pythagorean theorem is correct, but it describes the relationship among the three sides of a right triangle rather than the constructional geometry that produces that relationship.
-
+The Pythagorean theorem is correct, but it describes the relationship between the three sides of a right triangle. The Geometric Matrix adds the constructional context by introducing four variables, the left anchor a, centroid b, span c, and right boundary d, that satisfy a closed symmetry matrix.
 The Geometric Matrix provides a closed arithmetic framework for that construction. It introduces four variables, the left anchor `a`, centroid `b`, span `c`, and right boundary `d`, that satisfy a symmetric set of relations. Given any two variables, the remaining two are determined arithmetically.
 
 From a single boundary span, the Matrix generates the corresponding triangle, circumcircle, and bounding square as related geometric states of the same system, without requiring trigonometric functions.
@@ -27,7 +26,7 @@ The familiar 3-4-5 triangle appears as the equilibrium case of the system. The s
 * **Unified Constructional Framework:** Provides a single coordinate-based matrix for constructing and relating the triangle, its circumcircle, and its bounding square.
 * **Delta Classification:** The invariant `Δ = b² + c² - d²` classifies the resulting triangle as acute, right, or obtuse without trigonometry.
 * **3-4-5 Family:** The right-triangle equilibrium condition `Δ = 0` forces `d = 5a`, generating the 3-4-5 family as an arithmetic consequence of the boundary `[1, 5]`.
-* **Rational Circumcenter Construction:** The circumcenter is derived through the Matrix's rational partitioning relations, with square-root operations used where required by the geometry rather than trigonometric functions or Heron's formula.
+* **Rational Circumcenter Construction:** The circumcenter is derived through rational partitioning. The resulting quantities are obtained from b, c, and d through rational operations and one square root, without trigonometric functions or Heron's formula.
 * **Full Geometric Cycle:** The triangle, its circumcircle, and its bounding square are derived as related states of the same matrix.
 
 ---
