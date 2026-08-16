@@ -1,5 +1,5 @@
 # The Geometric Matrix
-**Completing the Pythagorean Theorem**
+**Rational Derivation of the Pythagorean Triangle**
 *Series: Mathematical Foundations for Universal Systems*
 
 **Author:** Carolina Johnson (CJ)  
